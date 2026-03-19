@@ -1,0 +1,15 @@
+services:
+  doc-manager:
+    build: .
+    container_name: doc-manager
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      # Mount the Service Account credentials file
+      - ./credentials.json:/app/credentials.json:ro
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

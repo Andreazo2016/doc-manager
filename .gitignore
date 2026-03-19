@@ -1,0 +1,10 @@
+# Secrets & credentials — NEVER commit these
+.env
+credentials.json
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Docker
+*.log
