@@ -8,3 +8,6 @@ npm-debug.log*
 
 # Docker
 *.log
+.agent
+.agent/
+deploy.sh
